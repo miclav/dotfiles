@@ -1,0 +1,6 @@
+[user]
+	name = Michael
+	email = michaellavaire@gmail.com
+[mergetool]
+	keepBackup = false
+	prompt = false
