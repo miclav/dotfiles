@@ -36,4 +36,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting'
 
 # Install zsh config
-cp zsh/.* ~
+cp zsh/.p10k.zsh ~
+cp zsh/.zshrc ~
