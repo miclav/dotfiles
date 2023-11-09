@@ -16,12 +16,12 @@ apt-get install -q=1 -y \
 # cp ./.gitmessage ~
 cp ./.gitconfig ~
 
-# # powerline fonts for zsh agnoster theme
-# git clone https://github.com/powerline/fonts.git --depth=1
-# pushd fonts
-# ./install.sh
-# popd ..
-# rm -rf fonts
+# powerline fonts for zsh agnoster theme
+git clone https://github.com/powerline/fonts.git --depth=1
+pushd fonts
+./install.sh
+popd ..
+rm -rf fonts
 
 # # nerd fonts for zsh agnoster theme
 # git clone https://github.com/ryanoasis/nerd-fonts.git --depth=1
@@ -32,8 +32,7 @@ cp ./.gitconfig ~
 
 # oh-my-zsh & plugins
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-# zsh -c 'git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions'
-# zsh -c 'git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting'
+zsh -c 'git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k'
 
 # Install zsh config
 cp zsh/.p10k.zsh ~
