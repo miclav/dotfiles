@@ -6,8 +6,7 @@ apt-get install -q=1 -y \
     nano bash git jq \
     pcregrep socat zip unzip \
     curl wget net-tools htop \
-    btop dnsutils ca-certificates \
-    zsh
+    dnsutils ca-certificates zsh
 
 # set time and time zone and display the current time settings
 # timedatectl set-timezone UTC
@@ -17,19 +16,19 @@ apt-get install -q=1 -y \
 # cp ./.gitmessage ~
 cp ./.gitconfig ~
 
-# powerline fonts for zsh agnoster theme
-git clone https://github.com/powerline/fonts.git --depth=1
-pushd fonts
-./install.sh
-popd ..
-rm -rf fonts
+# # powerline fonts for zsh agnoster theme
+# git clone https://github.com/powerline/fonts.git --depth=1
+# pushd fonts
+# ./install.sh
+# popd ..
+# rm -rf fonts
 
-# nerd fonts for zsh agnoster theme
-git clone https://github.com/ryanoasis/nerd-fonts.git --depth=1
-pushd nerd-fonts
-./install.sh
-popd ..
-rm -rf nerd-fonts
+# # nerd fonts for zsh agnoster theme
+# git clone https://github.com/ryanoasis/nerd-fonts.git --depth=1
+# pushd nerd-fonts
+# ./install.sh
+# popd ..
+# rm -rf nerd-fonts
 
 # oh-my-zsh & plugins
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
