@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Install all default tools that I require everyday
 apt-get update -q=2
@@ -31,7 +31,7 @@ rm -rf fonts
 # rm -rf nerd-fonts
 
 # oh-my-zsh & plugins
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+RUNZSH=no CHSH=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 zsh -c 'git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k'
 
 # Install zsh config
