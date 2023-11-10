@@ -20,7 +20,7 @@ cp ./.gitconfig ~
 git clone https://github.com/powerline/fonts.git --depth=1
 pushd fonts
 ./install.sh
-popd ..
+popd
 rm -rf fonts
 
 # # nerd fonts for zsh agnoster theme
